@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">Image Search</string>
+
+  <string name="imageContentDescription">Image</string>
+  <string name="search">Search</string>
+  <string name="clearHistory">Clear history</string>
+  <string name="emptyHistory">Search history is empty.</string>
+
+  <string name="error">Error, try again.</string>
+</resources>

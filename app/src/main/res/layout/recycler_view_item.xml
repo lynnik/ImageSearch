@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="@dimen/cardViewMarginBottom"
+  android:layout_marginEnd="@dimen/cardViewMargin"
+  android:layout_marginLeft="@dimen/cardViewMargin"
+  android:layout_marginRight="@dimen/cardViewMargin"
+  android:layout_marginStart="@dimen/cardViewMargin">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/imageImageView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:adjustViewBounds="true"
+      android:background="@color/text"
+      android:contentDescription="@string/imageContentDescription"
+      android:cropToPadding="true"
+      android:minHeight="72dp"
+      android:scaleType="centerCrop"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+      android:id="@+id/titleTextView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/titleMargin"
+      android:layout_marginBottom="@dimen/titleMargin"
+      android:layout_marginEnd="@dimen/titleMargin"
+      android:layout_marginLeft="@dimen/titleMargin"
+      android:layout_marginRight="@dimen/titleMargin"
+      android:layout_marginStart="@dimen/titleMargin"
+      android:ellipsize="end"
+      android:maxLines="3"
+      android:textColor="@color/text"
+      android:textSize="@dimen/title"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageImageView"
+      tools:text="Title"/>
+
+  </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
